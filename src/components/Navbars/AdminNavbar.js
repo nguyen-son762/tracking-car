@@ -40,20 +40,24 @@ const AdminNavbar = (props) => {
       <Navbar className="navbar-top navbar-dark" expand="md" id="navbar-main">
         <Container fluid>
           <Link
-            className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block"
+            className="h4 mb-0 text-black text-uppercase d-none d-lg-inline-block"
             to="/"
           >
             {props.brandText}
           </Link>
-          <Form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          <Form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto text-dark">
             <FormGroup className="mb-0">
-              <InputGroup className="input-group-alternative">
+              <InputGroup className="input-group-alternative text-dark">
                 <InputGroupAddon addonType="prepend">
                   <InputGroupText>
-                    <i className="fas fa-search" />
+                    <i className="fas fa-search text-dark" />
                   </InputGroupText>
                 </InputGroupAddon>
-                <Input placeholder="Search" type="text" />
+                <Input
+                  placeholder="Search"
+                  type="text"
+                  style={{ color: "black" }}
+                />
               </InputGroup>
             </FormGroup>
           </Form>
@@ -68,7 +72,7 @@ const AdminNavbar = (props) => {
                     />
                   </span>
                   <Media className="ml-2 d-none d-lg-block">
-                    <span className="mb-0 text-sm font-weight-bold">
+                    <span className="mb-0 text-sm font-weight-bold text-dark">
                       Jessica Jones
                     </span>
                   </Media>
